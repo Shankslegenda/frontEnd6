@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aldiyar | jQuery Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="vendor/jquery-3.7.1.min.js"><\/script>');
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="task1">
+        <p class="eyebrow">ASSIGNMENT 6 · JQUERY PORTFOLIO</p>
+        <h1 id="greeting">Hello!</h1>
+        <h2>Welcome to My Portfolio</h2>
+        <p class="intro">
+          I am a Computer Science student. I enjoy music, movies, and
+          learning new things.
+        </p>
+
+        <button type="button" id="lightBtn">Light Theme</button>
+        <button type="button" id="darkBtn">Dark Theme</button>
+      </section>
+      <section id="task2">
+        <h2>About Me</h2>
+        <p>
+          I love to travel and chill.
+        </p>
+
+        <div id="facts">
+          <p>Currently learning jQuery!</p>
+          <p>I speak three languages and enjoy watching movies.</p>
+        </div>
+
+        <button type="button" id="hideBtn">Hide</button>
+        <button type="button" id="showBtn">Show</button>
+        <button type="button" id="toggleBtn">Toggle</button>
+      </section>
+
+      <section id="task3">
+        <h2>My Gallery</h2>
+
+        <div id="gallery">
+          <img src="images/prague.jpg" alt="Mountain landscape illustration" />
+          <img src="images/vienna.jpg" alt="Computer showing a code symbol" />
+        </div>
+
+        <button type="button" id="fadeInBtn">Fade In</button>
+        <button type="button" id="fadeOutBtn">Fade Out</button>
+        <button type="button" id="fadeToggleBtn">Fade Toggle</button>
+      </section>
+
+      <section id="task4">
+        <h2>My Favorites</h2>
+        <h3>
+          <button
+            type="button"
+            class="heading"
+            id="musicBtn"
+          >
+            My Favorite Music
+          </button>
+        </h3>
+        <div class="panel" id="musicPanel">
+          <p>I enjoy Oasis and my favorite song is "Dont Look Back in Anger".</p>
+        </div>
+
+        <h3>
+          <button
+            type="button"
+            class="heading"
+            id="movieBtn"
+          >
+            My Favorite Movie
+          </button>
+        </h3>
+        <div class="panel" id="moviePanel">
+          <p>One of my favorite movies is Kill Bill.</p>
+        </div>
+
+        <h3>
+          <button
+            type="button"
+            class="heading"
+            id="subjectBtn"
+          >
+            My Favorite Subject
+          </button>
+        </h3>
+        <div class="panel" id="subjectPanel">
+          <p>My favorite subject is Languages.</p>
+        </div>
+      </section>
+      <section id="task5">
+        <h2>My Technical Skills</h2>
+        <ul id="skillList">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+
+        <label for="newSkill">New skill</label>
+        <input
+          id="newSkill"
+          type="text"
+          maxlength="80"
+          placeholder="Enter a skill"
+        />
+
+        <div>
+          <button type="button" id="addBtn">Add Skill</button>
+          <button type="button" id="prependBtn">Prepend Skill</button>
+          <button type="button" id="removeBtn">Remove Skill</button>
+        </div>
+
+        <p id="skillMessage" role="status"></p>
+      </section>
+
+      <section id="task6">
+        <h2>My Social Media</h2>
+        <a id="socialLink" href="https://www.instagram.com/mimemamomuuuvv/" target="_blank" rel="noopener noreferrer">
+          Visit Instagram
+        </a>
+        <button type="button" id="changeLinkBtn">Change Instagram link to GitHub</button>
+      </section>
+
+      <section id="task7">
+        <h2>Contact Form</h2>
+        <p>Practice form: the preview stays on this page.</p>
+
+        <form id="contactForm">
+          <label for="nameInput">Name</label>
+          <input type="text" id="nameInput" autocomplete="name" />
+
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" autocomplete="email" />
+        </form>
+
+        <h3>Live Preview</h3>
+        <div aria-live="polite">
+          <p id="namePreview">Name:</p>
+          <p id="emailPreview">Email:</p>
+        </div>
+      </section>
+
+      <section id="task8">
+        <h2>My Skill Levels</h2>
+        <p>Skills from my technical skills list.</p>
+
+        <p>HTML — 90%</p>
+        <div class="skillBox"><div class="bar" id="htmlBar"></div></div>
+
+        <p>CSS — 70%</p>
+        <div class="skillBox"><div class="bar" id="cssBar"></div></div>
+
+        <p>JavaScript — 60%</p>
+        <div class="skillBox"><div class="bar" id="jsBar"></div></div>
+
+        <button type="button" id="animateBtn">Animate My Skills</button>
+      </section>
+    </main>
+
+    <noscript>Please enable JavaScript to use the portfolio buttons.</noscript>
+  </body>
+</html>
